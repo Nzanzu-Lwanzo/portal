@@ -1,13 +1,13 @@
 import type { SiteProps } from "./@types";
 import styles from "./App.module.css";
 
-const Site = ({ description, name, url }: SiteProps) => {
+const Site = ({ description, name, url, idx }: SiteProps) => {
   return (
     <section className={styles.page}>
       <section className={styles.layout}>
         <aside className={styles.sidebar}>
           <div className={styles.counter}>
-            <span className={styles.counterNumber}>01</span>
+            <span className={styles.counterNumber}>{idx}</span>
           </div>
           <h1 className={styles.title}>{name}</h1>
 
